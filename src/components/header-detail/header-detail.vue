@@ -131,10 +131,10 @@
             line-height: 24px
             font-size: $fontsize-small
     .detail-close
-      position: relative
+      // position: relative
       width: 30px
       height: 30px
-      margin: -64px auto 0 auto
+      margin: 0 auto 30px auto
       clear: both
       font-size: $fontsize-large-xxxx
 </style>
