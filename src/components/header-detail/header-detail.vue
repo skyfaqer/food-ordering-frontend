@@ -134,7 +134,7 @@
       // position: relative
       width: 30px
       height: 30px
-      margin: 0 auto
+      margin: 0 auto 20px auto
       clear: both
       font-size: $fontsize-large-xxxx
 </style>
