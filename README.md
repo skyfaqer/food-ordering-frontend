@@ -1,4 +1,4 @@
-# vue-sell-cube
+# food-ordering-frontend
 
 ## Project setup
 ```
