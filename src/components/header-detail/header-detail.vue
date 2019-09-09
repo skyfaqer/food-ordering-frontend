@@ -82,7 +82,7 @@
     .detail-wrapper
       display: inline-block
       width: 100%
-      min-height: 100%
+      // min-height: 100%
       .detail-main
         margin-top: 64px
         padding-bottom: 64px
@@ -134,7 +134,7 @@
       // position: relative
       width: 30px
       height: 30px
-      margin: 0 auto 30px auto
+      margin: 0 auto
       clear: both
       font-size: $fontsize-large-xxxx
 </style>
