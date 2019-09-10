@@ -10,7 +10,7 @@
           <span class="name">{{seller.name}}</span>
         </div>
         <div class="description">
-          {{seller.description}}/{{seller.deliveryTime}}分钟送达
+          {{seller.description}}: {{seller.deliveryTime}}min
         </div>
         <div v-if="seller.supports" class="support">
           <support-ico :size=1 :type="seller.supports[0].type"></support-ico>
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div v-if="seller.supports" class="support-count">
-        <span class="count">{{seller.supports.length}}个</span>
+        <span class="count">{{seller.supports.length}} more</span>
         <i class="icon-keyboard_arrow_right"></i>
       </div>
     </div>

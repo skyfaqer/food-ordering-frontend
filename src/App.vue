@@ -28,11 +28,11 @@
     computed: {
       tabs() {
         return [{
-          label: '商品', component: Goods, data: { seller: this.seller }
+          label: 'Goods', component: Goods, data: { seller: this.seller }
         }, {
-          label: '评价', component: Ratings, data: { seller: this.seller }
+          label: 'Ratings', component: Ratings, data: { seller: this.seller }
         }, {
-          label: '商家', component: Seller, data: { seller: this.seller }
+          label: 'Seller', component: Seller, data: { seller: this.seller }
         }]
       }
     },

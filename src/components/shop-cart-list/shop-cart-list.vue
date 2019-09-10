@@ -13,8 +13,8 @@
         @after-leave="afterLeave">
         <div v-if="visible">
           <div class="list-header">
-            <h1 class="title">购物车</h1>
-            <span class="empty" @click="empty">清空</span>
+            <h1 class="title">Shop cart</h1>
+            <span class="empty" @click="empty">Clear all</span>
           </div>
           <cube-scroll class="list-content" ref="listContent">
             <ul>
@@ -77,7 +77,7 @@
       empty() {
         this.$createDialog({
           type: 'confirm',
-          content: '清空购物车吗？',
+          content: 'Are you sure to clear shop cart?',
           $events: {
             confirm: () => {
               this.selectFoods.forEach((food) => {

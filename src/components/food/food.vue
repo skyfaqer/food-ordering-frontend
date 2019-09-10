@@ -14,8 +14,8 @@
           <div class="content">
             <h1 class="title">{{food.name}}</h1>
             <div class="detail">
-              <span class="sell-count">月售{{food.sellCount}}份</span>
-              <span class="rating">好评率{{food.rating}}%</span>
+              <span class="sell-count">Sales: {{food.sellCount}}</span>
+              <span class="rating">Favorable ratings: {{food.rating}}%</span>
             </div>
             <div class="price">
               <span class="now">￥{{food.price}}</span><span class="old" v-show="food.oldPrice">￥{{food.oldPrice}}</span>
@@ -25,18 +25,18 @@
             </div>
             <transition name="fade">
               <div @click="addFirst" class="buy" v-show="!food.count">
-                加入购物车
+                Add to cart
               </div>
             </transition>
           </div>
           <split v-show="food.info"></split>
           <div class="info" v-show="food.info">
-            <h1 class="title">商品信息</h1>
+            <h1 class="title">Goods info</h1>
             <p class="text">{{food.info}}</p>
           </div>
           <split></split>
           <div class="rating">
-            <h1 class="title">商品评价</h1>
+            <h1 class="title">Goods ratings</h1>
             <rating-select
               @select="onSelect"
               @toggle="onToggle"
@@ -61,7 +61,7 @@
                   </p>
                 </li>
               </ul>
-              <div class="no-rating" v-show="!computedRatings || !computedRatings.length">暂无评价</div>
+              <div class="no-rating" v-show="!computedRatings || !computedRatings.length">No ratings</div>
             </div>
           </div>
         </div>
@@ -93,9 +93,9 @@
     data() {
       return {
         desc: {
-          all: '全部',
-          positive: '推荐',
-          negative: '吐槽'
+          all: 'All',
+          positive: 'Good',
+          negative: 'Bad'
         }
       }
     },

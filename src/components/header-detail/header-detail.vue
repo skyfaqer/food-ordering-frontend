@@ -9,7 +9,7 @@
           </div>
           <div class="title">
             <div class="line"></div>
-            <div class="text">优惠信息</div>
+            <div class="text">Discount info</div>
             <div class="line"></div>
           </div>
           <ul v-if="seller.supports" class="supports">
@@ -20,7 +20,7 @@
           </ul>
           <div class="title">
             <div class="line"></div>
-            <div class="text">商家公告</div>
+            <div class="text">Bulletin</div>
             <div class="line"></div>
           </div>
           <div class="bulletin">

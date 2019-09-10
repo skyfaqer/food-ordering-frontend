@@ -10,7 +10,7 @@
     </div>
     <div @click="toggleContent" class="switch" :class="{'on':onlyContent}">
       <span class="icon-check_circle"></span>
-      <span class="text">只看有内容的评价</span>
+      <span class="text">View ratings with comments only</span>
     </div>
   </div>
 </template>
@@ -43,9 +43,9 @@
         type: Object,
         default() {
           return {
-            all: '全部',
-            positive: '满意',
-            negative: '不满意'
+            all: 'All',
+            positive: 'Good',
+            negative: 'Bad'
           }
         }
       }

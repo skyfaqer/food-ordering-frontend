@@ -12,7 +12,7 @@
             </div>
           </div>
           <div class="price" :class="{'highlight':totalPrice>0}">￥{{totalPrice}}</div>
-          <div class="desc">另需配送费￥{{deliveryPrice}}元</div>
+          <div class="desc">Delivery price: ￥{{deliveryPrice}}</div>
         </div>
         <div class="content-right">
           <div @click="pay" class="pay" :class="payClass">
@@ -101,12 +101,12 @@
       },
       payDesc() {
         if (this.totalPrice === 0) {
-          return `￥${this.minPrice}元起送`
+          return `Starting: ￥${this.minPrice}`
         } else if (this.totalPrice < this.minPrice) {
           let diff = this.minPrice - this.totalPrice
-          return `还差￥${diff}元起送`
+          return `￥${diff} needed`
         } else {
-          return '去结算'
+          return 'Pay'
         }
       },
       payClass() {
@@ -124,8 +124,8 @@
       pay(e) {
         if (this.totalPrice >= this.minPrice) {
           this.$createDialog({
-            title: '支付',
-            content: `您需要支付共${this.totalPrice}元`
+            title: 'Pay',
+            content: `You need to pay ￥${this.totalPrice}`
           }).show()
           e.stopPropagation()
         }
