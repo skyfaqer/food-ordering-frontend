@@ -1,13 +1,12 @@
-# food-ordering-frontend
+# Food-ordering-frontend
 
-## Project setup
+## How to run
+
+First, make sure you have installed Node.js and npm. Then ```git pull``` and enter the project directory.
+
+### Project setup
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
 ```
 
 ### Compiles and minifies for production
@@ -15,14 +14,14 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
+### Compiles and hot-reloads for development
 ```
-npm run test
+npm run serve
 ```
 
-### Lints and fixes files
+### Run this on server
 ```
-npm run lint
+nohup node prod.server.js &
 ```
 
 ### Customize configuration
