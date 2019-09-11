@@ -2,7 +2,7 @@
 
 ## How to run
 
-First, make sure you have installed Node.js and npm. Then ```git pull``` and enter the project directory.
+First, make sure you have installed Node.js and npm. Then ```git clone``` and enter the project directory.
 
 ### Project setup
 ```
