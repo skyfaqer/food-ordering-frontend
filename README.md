@@ -1,5 +1,11 @@
 # Food-ordering-frontend
 
+## See example here
+
+**Be sure to access this url via mobile phone browsers, or view this page through browser's developer tools**
+
+http://149.28.112.224:8900/
+
 ## How to run
 
 First, make sure you have installed Node.js and npm. Then ```git clone``` and enter the project directory.
